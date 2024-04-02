@@ -21,5 +21,5 @@
 
 En `documentos` o `descargas` escriba el siguiente comando para importar el repositorio:
 ```
-git clone https://github.com/RecamFx/Python
+git clone https://github.com/RecamFx/POO-Python
 ```
