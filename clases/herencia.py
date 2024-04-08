@@ -10,10 +10,18 @@ class Persona:
     def hablar(self):
         print(f"{self.nombre} esta hablando!")
         
+        
 class Empleado(Persona): # Si entre los parentesis le ponemos otra clase, esa misma clase va a heredar los atributos de la otra
-    pass # Pass funciona para crear algo pero no sabemo que va definir
+    # Agregamos mas atributos de los que ya tenia
+    def __init__(self, nombre, edad , nacionalidad, trabajo, salario): # Le ponemos todos los atributos que queremos que tenga
+        super().__init__(nombre, edad , nacionalidad) # Aca le decimos que queremos que herede
+        self.trabajo = trabajo
+        self.salario = salario
+    #pass # Pass funciona para crear algo pero no sabemo que va definir
 
-roberto = Empleado("Roberto",20,"Argentino") # Le pasamos a empleado los atributos
+
+roberto = Empleado("Roberto",20,"Argentino","programador",100000) # Le pasamos a empleado los atributos
+
 
 print(roberto.nombre) #? Roberto
 roberto.hablar() #? Roberto esta hablando!
