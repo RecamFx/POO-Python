@@ -50,3 +50,17 @@ roberto = EmpleadoArtista("Roberto",20,"Argentino","Cantar",100000,"ProgramingIn
 print(roberto.nombre) #? Roberto
 print(roberto.presentare()[0]) #? No tengo jaja
 print(roberto.presentare()[1]) #? La habilidad es Cantar
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------#
+#! Como saber si una clase hereda a otra o viceversa
+
+print(issubclass(EmpleadoArtista, Artista)) #? True
+# Eso es porque EmpleadoArtista hereda a Artista
+print(issubclass(Persona, Artista)) #? False
+
+print(isinstance(roberto, EmpleadoArtista)) #? True
+print(isinstance(roberto, Artista)) #? True
+# Esto es porque la variable roberto es de EmpleadoArtista, y como artista le hereda a empleado artista es como que es mayor (jerarquicamente)
+# Por ende tambien es una instancia de Artista
