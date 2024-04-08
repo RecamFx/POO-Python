@@ -17,7 +17,8 @@ class Persona:
         self.edad = edad
         
     def info(self):
-        print(f"Nombre: {self.nombre}, Edad: {self.edad}")
+        print(f"Nombre: {self.nombre}")
+        print(f"Edad: {self.edad}")
 
 class Estudiante(Persona):
     def __init__(self, nombre, edad, grado):
@@ -25,8 +26,12 @@ class Estudiante(Persona):
         self.grado = grado
         
     def info2(self):
+        #super().info()
         print(f"Grado: {self.grado}")
       
 conjunto = Estudiante("Stephen", "36", "6to")
 
 print(conjunto.edad)
+
+conjunto.info()
+conjunto.info2()
