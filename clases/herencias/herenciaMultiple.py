@@ -8,14 +8,7 @@ class Persona:
         
     def hablar(self):
         print(f"{self.nombre} esta hablando!")
-
         
-class Empleado(Persona):
-    def __init__(self, nombre, edad , nacionalidad, trabajo, salario):
-        super().__init__(nombre, edad , nacionalidad)
-        self.trabajo = trabajo
-        self.salario = salario
-
 class Artista:
     def __init__(self, habilidad):
         self.habilidad = habilidad
