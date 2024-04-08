@@ -7,9 +7,13 @@ class Persona:
         self.edad = edad
         self.nacionalidad = nacionalidad
         
+    def hablar(self):
+        print(f"{self.nombre} esta hablando!")
+        
 class Empleado(Persona): # Si entre los parentesis le ponemos otra clase, esa misma clase va a heredar los atributos de la otra
     pass # Pass funciona para crear algo pero no sabemo que va definir
 
 roberto = Empleado("Roberto",20,"Argentino") # Le pasamos a empleado los atributos
 
 print(roberto.nombre) #? Roberto
+roberto.hablar() #? Roberto esta hablando!
