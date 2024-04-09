@@ -10,8 +10,14 @@ class Persona:
     
     def __repr__(self):
         return f'Persona("{self.nombre}",{self.edad})'
+    
+    def __add__(self,otro):
+        nuevo_valor = self.edad + otro.edad
+        return Persona(self.nombre + otro.nombre, nuevo_valor)
 
 stephen = Persona("Stephen", 36)
+pedro = Persona("Pedro", 30)
+maria = Persona("Maria", 20)
 
 print(stephen) #? Persona(nombre={self.nombre},edad={self.edad})
 
@@ -19,3 +25,7 @@ representacion = repr(stephen)
 resultado = eval(representacion)
 
 print(resultado) #? Persona(nombre=Stephen,edad=36)
+
+
+nueva_persona = stephen + pedro + maria
+print(nueva_persona)
