@@ -1,4 +1,5 @@
 # Los setters y getters sirven para acceder a un atributo de una accion que sea privado
+# Son conceptos
 
 class Persona:
     def __init__(self, nombre, edad, edad2):
