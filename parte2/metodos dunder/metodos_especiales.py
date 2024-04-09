@@ -28,4 +28,4 @@ print(resultado) #? Persona(nombre=Stephen,edad=36)
 
 
 nueva_persona = stephen + pedro + maria
-print(nueva_persona)
+print(nueva_persona) #? Persona(nombre=StephenPedroMaria,edad=86)
